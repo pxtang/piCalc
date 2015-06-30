@@ -30,7 +30,7 @@ public class picalc implements Runnable {
 
         System.out.println("Calculated pi is: "+pi);
         System.out.format("Runtime for %d threads with %d calculations is %fs\n",THREAD_COUNT,LOOP_MAX,((endTime-startTime)/1000.0));
-        double error = pi-Math.PI;
+        double error = Math.abs(pi-Math.PI);
         System.out.format("Error is %f or %f percent\n",error,error/Math.PI*100);
     }
 
